@@ -1,0 +1,14 @@
+
+eclipse : 
+	1,window --> preferences --> keys修改快捷键
+	2,增加提示window --> preferences --> java --> editor --> content assist --> auto activation triggers for java
+			填abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+	3,
+as : 
+
+
+快捷键使用as为准.
+
+1,代码格式化	ctrl + shift + l
+2,插入代码提示等,getset,override	alt + insert
+3,代码提示	alt + enter
