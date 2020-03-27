@@ -1,0 +1,23 @@
+
+eclipse : 
+	1,window --> preferences --> keys修改快捷键
+	2,增加提示window --> preferences --> java --> editor --> content assist --> auto activation triggers for java
+			填abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+	3,
+as : 
+
+
+
+快捷键使用as为准.
+
+1,代码格式化		ctrl + alt + l
+2,插入代码提示等,getset,override等		alt + insert
+3,代码提示		alt + enter 或者 shift + enter(提供错误的修改方法) 
+4,查找		ctrl + f
+5,全部查找		ctrl + shift + f(小心被搜狗输入法占用,在系统快捷键中,关掉输入法的所有快捷键)
+6,全部类或者文件查找		双击shift
+7,查找错误		f2
+8,上一次或者下一次光标的位置		ctrl + alt + 左右方向键
+9,参数提示		ctrl + p
+10,当前行的上下移动		alt + shift + 上下方向键,		当前行复制:ctrl + d		当前行删除:ctrl + y
+11,当前列出文件的左右变换		alt + 左右方向键
