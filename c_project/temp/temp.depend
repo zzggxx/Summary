@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1596624703 source:e:\c_project\temp\fun.c
+
+1596797232 source:e:\c_project\temp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fun.h"
+
+1596624703 e:\c_project\temp\fun.h
+
+1596688440 source:e:\c_project\temp\file_fgets_fputs.c
+	<stdio.h>
+	<stdlib.h>
+
+1596718815 source:e:\c_project\temp\file_fwrite_fread.c
+	<stdio.h>
+
+1596717171 source:e:\c_project\temp\file_fscanf_fprintf.c
+	<stdio.h>
+
+1596770043 source:e:\c_project\temp\struct\struct_example.c
+	<stdio.h>
+
+1596770158 source:e:\c_project\temp\enum\enum_example.c
+	<stdio.h>
+
+1596771331 source:e:\c_project\temp\union\union_example.c
+	<stdio.h>
+
+1596777644 source:e:\c_project\temp\file\file_fgets_fputs.c
+	<stdio.h>
+	<stdlib.h>
+
+1596777675 source:e:\c_project\temp\file\file_fscanf_fprintf.c
+	<stdio.h>
+
+1596777708 source:e:\c_project\temp\file\file_fwrite_fread.c
+	<stdio.h>
+
+1596783338 source:e:\c_project\temp\file\file_fgetc_fputc.c
+
+1596783260 source:e:\c_project\temp\file\file_struct.c
+	<stdio.h>
+
+1596797187 source:e:\c_project\temp\file\large_file_copy.c
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+
+1596796013 source:e:\c_project\temp\file\test.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<sys/types.h>
+	<sys/stat.h>
+
