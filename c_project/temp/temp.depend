@@ -56,3 +56,54 @@
 	<sys/types.h>
 	<sys/stat.h>
 
+1596801733 source:f:\summary-\c_project\temp\enum\enum_example.c
+	<stdio.h>
+
+1596801733 source:f:\summary-\c_project\temp\file\file_fgetc_fputc.c
+
+1596801733 source:f:\summary-\c_project\temp\file\file_fgets_fputs.c
+	<stdio.h>
+	<stdlib.h>
+
+1596801733 source:f:\summary-\c_project\temp\file\file_fscanf_fprintf.c
+	<stdio.h>
+
+1596801733 source:f:\summary-\c_project\temp\file\file_fwrite_fread.c
+	<stdio.h>
+
+1596801733 source:f:\summary-\c_project\temp\file\file_struct.c
+	<stdio.h>
+
+1596801733 source:f:\summary-\c_project\temp\file\large_file_copy.c
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<string.h>
+	<time.h>
+
+1596801733 source:f:\summary-\c_project\temp\file\test.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<sys/types.h>
+	<sys/stat.h>
+
+1596801733 source:f:\summary-\c_project\temp\struct\struct_example.c
+	<stdio.h>
+
+1596801733 source:f:\summary-\c_project\temp\union\union_example.c
+	<stdio.h>
+
+1597038950 source:f:\summary-\c_project\temp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fun.h"
+
+1596801733 f:\summary-\c_project\temp\fun.h
+
+1597052913 source:f:\summary-\c_project\temp\update\update.c
+	<stdio.h>
+	<stdlib.h>
+
