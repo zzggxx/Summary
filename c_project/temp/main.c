@@ -3,7 +3,7 @@
 
 #include "fun.h"
 
-int main()
+int main01()
 {
 
     unsigned int a = 10;

@@ -62,6 +62,9 @@
 		<Unit filename="struct/struct_example.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="test_temp.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="union/union_example.c">
 			<Option compilerVar="CC" />
 		</Unit>
