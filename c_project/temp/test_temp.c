@@ -1,66 +1,40 @@
 #include <stdio.h>
 
-extern int* getSpace();
-extern void allocateSpace(char*);
-extern void allocateSpace01(char**);
+//  宏函数,某些情况下比函数效率高,因为宏函数只是进行简单的文本替换,不进行任何的语法检查
+#define MYADD(x,y) ((x)+(y))
+#define MAX 1024
+
+extern void testtt(char**,int*);
 
 int main()
 {
-//    两个p的地址是一样的,函数内的用完就释放了.为啥是一样的地址呢??
-    int* p1=getSpace();
-    printf("%p\n",p1);
 
+//    int a[]={1,2,3};
+//    printf("%d\n",a);
+//
+    char arr[]="hello world!";
 
-//    用完堆内存一定要释放
-    free(p1);
-    p1=NULL;
+    reverse(arr,sizeof(arr)/sizeof(arr[0]));
 
-
-    char* p=NULL;
-    allocateSpace(p);
-    printf("p=%s\n",p);//p=null
-
-    char* p01=NULL;
-    allocateSpace01(&p01);
-    printf("p=%s\n",p01);//p=hello world
+    printf("1111111111\n");
+    printf("%d---\n",arr);
 }
 
-//形参也是局部变量,之后被释放掉了.并且其中的堆内存丢失了地址,"hello world"是由常量区复制到堆区中的
-void allocateSpace(char* p)
+void reverse(char* arr,int len)
 {
-    p=malloc(100);
-    memset(p,0,100);
-    strcpy(p,"hello world!");
-}
+//    char arr[]="hello world!";
 
-//传入二级指针,是对上一个的改进
-void allocateSpace01(char** p)
-{
-    char* temp=malloc(100);
-    memset(temp,0,100);
-    strcpy(temp,"hello world!");
-
-    *p=temp;
-}
-
-int* getSpace()
-{
-//    p还是在栈区,指向了堆区的内存
-    int* p=malloc(sizeof(int)*5);
-//    堆内存申请之后一定要进行初始化,很多bug就是没有初始化造成的
-    memset(p,0,20);
-    printf("%p\n",p);
-    if(NULL==p)
+    char* start=arr;
+    char* end=arr+len-1;
+    while(start<end)
     {
-        return NULL;
+        char temp=*start;
+        *start=*end;
+        *end=temp;
+        ++start;
+        --end;
     }
 
-//    只要是内存是连续的,都可以使用下标来使用
-    for(int i=0; i<5; ++i)
-    {
-        p[i]=100+i;
-    }
-
-    return p;
-
+    printf("%d---\n",arr);
 }
+

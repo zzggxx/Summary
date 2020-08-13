@@ -3,6 +3,8 @@
 
 #include "fun.h"
 
+const
+
 int main01()
 {
 
