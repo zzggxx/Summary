@@ -9,32 +9,14 @@ extern void testtt(char**,int*);
 int main()
 {
 
-//    int a[]={1,2,3};
-//    printf("%d\n",a);
-//
-    char arr[]="hello world!";
+int arr[]={1,2,3,4};
 
-    reverse(arr,sizeof(arr)/sizeof(arr[0]));
+printf("%d\n",arr);
+printf("%d\n",&arr);
+printf("%d\n",&arr+1);
 
-    printf("1111111111\n");
-    printf("%d---\n",arr);
+printf("%d\n",arr[-1]);
+
 }
 
-void reverse(char* arr,int len)
-{
-//    char arr[]="hello world!";
-
-    char* start=arr;
-    char* end=arr+len-1;
-    while(start<end)
-    {
-        char temp=*start;
-        *start=*end;
-        *end=temp;
-        ++start;
-        --end;
-    }
-
-    printf("%d---\n",arr);
-}
 
