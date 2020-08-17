@@ -1,21 +1,48 @@
 #include <stdio.h>
 
-//  宏函数,某些情况下比函数效率高,因为宏函数只是进行简单的文本替换,不进行任何的语法检查
-#define MYADD(x,y) ((x)+(y))
-#define MAX 1024
+struct Persion
+{
+    char name[20];
+    int age;
+};
 
-extern void testtt(char**,int*);
+void printPersions(struct Persion* persions,int len)
+{
+    for(int i=0; i<len; i++)
+    {
+        printf("%s %d\n",persions[i].name,persions[i].age);
+    }
+}
 
 int main()
 {
+//   栈上创建结构体数组
+    struct Persion persions[]=
+    {
+        {
+            "will18",18
+        },
+        {
+            "will19",19
+        },
+        {
+            "will20",20
+        },
+        {
+            "will21",21
+        }
+    };
+    int len=sizeof(persions)/sizeof(persions[0]);
+    printPersions(persions,len);
 
-int arr[]={1,2,3,4};
-
-printf("%d\n",arr);
-printf("%d\n",&arr);
-printf("%d\n",&arr+1);
-
-printf("%d\n",arr[-1]);
+//    堆上创建结构体数组
+    struct Persion* persionss=(struct Persion*)malloc(sizeof(struct Persion)*6);
+    for(int i=0;i<6;i++)
+    {
+        strcpy(persionss[i].name,"will");
+        persionss[i].age=i;
+    }
+    printPersions(persionss,len);
 
 }
 
