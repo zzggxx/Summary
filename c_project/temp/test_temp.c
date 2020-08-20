@@ -2,48 +2,56 @@
 
 struct Persion
 {
-    char name[20];
+    char* name;
     int age;
 };
 
-void printPersions(struct Persion* persions,int len)
+void print(struct Persion p)
 {
-    for(int i=0; i<len; i++)
-    {
-        printf("%s %d\n",persions[i].name,persions[i].age);
-    }
+    printf("%s %d\n",p.name,p.age);
 }
 
 int main()
 {
-//   栈上创建结构体数组
-    struct Persion persions[]=
-    {
-        {
-            "will18",18
-        },
-        {
-            "will19",19
-        },
-        {
-            "will20",20
-        },
-        {
-            "will21",21
-        }
-    };
-    int len=sizeof(persions)/sizeof(persions[0]);
-    printPersions(persions,len);
+    struct Persion pp1;
+    pp1.name = malloc(sizeof(char)*20);
+    strcpy(pp1.name,"will");
+    pp1.age=30;
 
-//    堆上创建结构体数组
-    struct Persion* persionss=(struct Persion*)malloc(sizeof(struct Persion)*6);
-    for(int i=0;i<6;i++)
+    print(pp1);
+
+    struct Persion pp2;
+    pp2.name=malloc(sizeof(char)*60);
+#if 0
+//    直接赋值导致了pp2中name的内存地址指向了pp1,下边的释放内存就属于二次释放会宕掉
+//    结构体内部有指针并且指向堆空间,直接赋值会产生两个问题:1.同一块控件会被释放两次;2.内存泄漏
+    pp2=pp1;
+    print(pp2);
+
+    if(pp2.name!=NULL)
     {
-        strcpy(persionss[i].name,"will");
-        persionss[i].age=i;
+        free(pp2.name);
+        pp2.name==NULL;
     }
-    printPersions(persionss,len);
 
+    if(pp1.name!=NULL)
+    {
+        free(pp1.name);
+        pp1.name==NULL;
+    }
+#endif // 0
+
+//      标准拷贝两步:1.释放原来控件并且开辟与之对应的大小;2,赋值
+    if(pp2.name!=NULL)
+    {
+        free(pp2.name);
+        pp2.name=NULL;
+    }
+    pp2.name=malloc(strlen(pp1.name)+1);
+    strcpy(pp2.name,pp1.name);
+    pp2.age=pp1.age+1;
+
+    print(pp2);
 }
 
 
