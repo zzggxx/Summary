@@ -11,7 +11,7 @@ void print(struct Persion p)
     printf("%s %d\n",p.name,p.age);
 }
 
-int main()
+int main_test_temp()
 {
     struct Persion pp1;
     pp1.name = malloc(sizeof(char)*20);

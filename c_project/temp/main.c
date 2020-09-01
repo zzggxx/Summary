@@ -6,7 +6,8 @@
 
 int main()
 {
-    system("calc");
+    //system("calc");
+    extern int a;
 }
 
 
