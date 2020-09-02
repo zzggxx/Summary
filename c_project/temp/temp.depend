@@ -96,7 +96,7 @@
 1596801733 source:f:\summary-\c_project\temp\union\union_example.c
 	<stdio.h>
 
-1598953584 source:f:\summary-\c_project\temp\main.c
+1599027248 source:f:\summary-\c_project\temp\main.c
 	<stdio.h>
 	<stdlib.h>
 	"fun.h"
@@ -109,4 +109,10 @@
 
 1598953605 source:f:\summary-\c_project\temp\test_temp.c
 	<stdio.h>
+
+1599025783 source:f:\summary-\c_project\temp\array\a_readme.c
+
+1599027267 source:f:\summary-\c_project\temp\array\array.c
+	<stdio.h>
+	<stdlib.h>
 

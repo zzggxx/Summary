@@ -31,6 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="array/a_readme.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="array/array.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="enum/enum_example.c">
 			<Option compilerVar="CC" />
 		</Unit>
