@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export2.dtd">
-<en-export export-date="20200701T121556Z" application="Evernote/Windows" version="6.x">
-<note><title>0005.服务器的搭建</title><content><![CDATA[<!DOCTYPE en-note SYSTEM 'http://xml.evernote.com/pub/enml2.dtd'><en-note><div style="font-size: 14px; margin: 0; padding: 0; width: 100%;"><h1 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 41px; border-bottom: 3px double #999; color: #000; margin-top: 14px;">0005.服务器的搭建</h1>
-<h1 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 41px; border-bottom: 3px double #999; color: #000;">一.ftp-</h1>
-<h1 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 41px; border-bottom: 3px double #999; color: #000;">二.ssh和scp</h1>
-<h1 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 41px; border-bottom: 3px double #999; color: #000;">三.samba</h1>
-</div><center style='display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden'>%23%200005.%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%0A%0A%23%20%E4%B8%80.ftp-%0A%23%20%E4%BA%8C.ssh%E5%92%8Cscp%0A%23%20%E4%B8%89.samba</center></en-note>]]></content><created>20191226T032212Z</created><updated>20200701T112022Z</updated><note-attributes><author>will</author><source>desktop.win</source><source-application>yinxiang.win32</source-application><content-class>yinxiang.markdown</content-class></note-attributes></note></en-export>
